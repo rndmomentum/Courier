@@ -1,0 +1,12 @@
+{
+    "name": "momentumplanet/courier",
+    "description": "Malaysia Courier API",
+    "type": "library",
+    "minimum-stability": "stable",
+    "autoload": {
+        "psr-4": {
+            "Momentumplanet\\Courier\\": "src/"
+        }
+    },
+    "require": {}
+}
