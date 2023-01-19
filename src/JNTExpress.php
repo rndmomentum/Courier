@@ -348,7 +348,7 @@ class JNTExpress implements Courier
         (
             'billcode'      => $this->billcode,
             'account'       => $_ENV['JNT_EXPRESS_ACCOUNT_USERNAME'],
-            'password'      => $_ENV['JNT_EXPRESS_ACCOUNT_PASSWORD'],
+            'password'      => $_ENV['JNT_EXPRESS_ACCOUNT_API_KEY'],
             'customercode'  => $_ENV['JNT_EXPRESS_ACCOUNT_CUSCODE'],
         );
 
