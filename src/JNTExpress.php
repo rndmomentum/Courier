@@ -211,7 +211,7 @@ class JNTExpress implements Courier
         curl_setopt($s, CURLOPT_URL, $url); 
         curl_setopt($s, CURLOPT_POST, 1); 
         curl_setopt($s, CURLOPT_POSTFIELDS, http_build_query($post));
-        curl_setopt($s, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form- urlencoded')); 
+        curl_setopt($s, CURLOPT_HTTPHEADER, array('Content-Type: application/x-www-form-urlencoded')); 
         curl_setopt($s,CURLOPT_SSL_VERIFYPEER, false); 
         curl_setopt($s, CURLOPT_HEADER, 0); 
         curl_setopt($s, CURLOPT_RETURNTRANSFER, TRUE); 
