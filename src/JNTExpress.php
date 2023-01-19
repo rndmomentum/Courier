@@ -141,9 +141,9 @@ class JNTExpress implements Courier
         return $this;
     }
 
-    public function sender($sender_nameasdasd,$sender_address,$sender_phone,$sender_zip)
+    public function sender($sender_name,$sender_address,$sender_phone,$sender_zip)
     {
-        $this->sender_name = $sender_nameasdasd;
+        $this->sender_name = $sender_name;
         $this->sender_address = $sender_address;
         $this->sender_phone = $sender_phone;
         $this->sender_zip = $sender_zip;
@@ -274,6 +274,9 @@ class JNTExpress implements Courier
             'receiver_addr'     => $this->receiver_address,
             'receiver_phone'    => $this->receiver_phone,
             'receiver_zip'      => $this->receiver_zip,
+            'qty'               => $this->parcel_quantity,
+            'weight'            => $this->parcel_weight,
+            'item_name'         => $this->parcel_description,
             'payType'           => $this->pay_type,
             'goodsType'         => $this->goods_type,
             'serviceType'       => $this->service_type,
